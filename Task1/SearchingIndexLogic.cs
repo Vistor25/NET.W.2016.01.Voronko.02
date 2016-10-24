@@ -8,6 +8,11 @@ namespace Task1
 {
     public class SearchingIndexLogic
     {
+        /// <summary>
+        /// Searches the index of an element in the array where the sum before equal the sum after element
+        /// </summary>
+        /// <param name="array">The array where we search the index</param>
+        /// <returns></returns>
         public static int Search(int [] array)
         {
             int left = 0;

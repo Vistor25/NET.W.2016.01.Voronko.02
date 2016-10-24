@@ -8,6 +8,12 @@ namespace Task2
 {
     public class StringSplit
     {
+        /// <summary>
+        /// Splits two strings ,sorts the resulting string in the alphabetic order and deletes the repeating symbols
+        /// </summary>
+        /// <param name="a">First string</param>
+        /// <param name="b">Second string</param>
+        /// <returns>Splitted,sorted string excluding the repeating symbols</returns>
         public static string StringSplitting(string a, string b)
         {
             string c = a + b;

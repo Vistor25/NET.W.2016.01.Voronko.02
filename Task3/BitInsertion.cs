@@ -9,14 +9,23 @@ namespace Task3
 {
     public class BitInsertion
     {
-        public static int Insertion(int a, int b, int i, int j)
+
+        /// <summary>
+        /// Inserts second number into first number starting from firstIndex to secondIndex
+        /// </summary>
+        /// <param name="a">First number</param>
+        /// <param name="b">Second number</param>
+        /// <param name="firstIndex">Starting index which from we begin inserting</param>
+        /// <param name="secondIndex">The last index where we inserting</param>
+        /// <returns></returns>
+        public static int Insertion(int a, int b, int firstIndex, int secondIndex)
         {
             BitArray firstNumber = new BitArray(new int[] { a });
             BitArray secondNumber = new BitArray(new int[] { b });
 
-            for(int start=i; start<=j;start++)
+            for(int i=firstIndex; i<=secondIndex;i++)
             {
-                firstNumber.Set(start, secondNumber.Get(start));
+                firstNumber.Set(i, secondNumber.Get(i));
 
             }
             int[] result = new int[] { 0 };
