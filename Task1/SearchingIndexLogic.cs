@@ -15,10 +15,12 @@ namespace Task1
         /// <returns></returns>
         public static int Search(int [] array)
         {
+            if (array == null || array.Length < 3)
+                throw new ArgumentException();
             int left = 0;
-            int right = array.Sum() - array[0];
+            var right = array.Sum() - array[0];
             int i;
-            for (i = 0; left != right&&i<array.Length; i++)
+            for (i = 0; left != right&&i<array.Length-1; i++)
             {
                 left += array[i];
                 right -= array[i + 1];
