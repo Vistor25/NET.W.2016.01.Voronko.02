@@ -14,6 +14,7 @@ namespace Task2
         /// <param name="a">First string</param>
         /// <param name="b">Second string</param>
         /// <returns>Splitted,sorted string excluding the repeating symbols</returns>
+        ///  <exception cref="ArgumentException"></exception>
         public static string StringSplitting(string a, string b)
         {
             if (string.Equals(a, string.Empty) || ReferenceEquals(a, null) || string.Equals(b, string.Empty) || ReferenceEquals(b, null))

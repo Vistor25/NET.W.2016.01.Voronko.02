@@ -14,7 +14,7 @@ namespace Task2.Tests
             string a = "aaabbccdd";
             string b = "eeffggghhh";
             
-            string expected = "abcdefgh"; ;
+            string expected = "abcdefgh"; 
             //Act
             string actual = StringSplit.StringSplitting(a,b);
             //Assert

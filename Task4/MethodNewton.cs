@@ -8,6 +8,14 @@ namespace Task4
 {
     public class MethodNewton
     {
+        /// <summary>
+        /// Calculates the root of number by NewtonMethod
+        /// </summary>
+        /// <param name="A">Our number</param>
+        /// <param name="n">Power of root</param>
+        /// <param name="e">Accuracy</param>
+        /// <returns>The root of our number</returns>
+        /// <exception cref="ArgumentException"></exception>
         public static double SqrtByNewtonMetod(double A, double n, double e = 0.000000001)
         {
             if (n<=0||e>1)

@@ -7,7 +7,7 @@ namespace Task5.Tests
     public class DoubleExtensionTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ConvertToBits()
         {
             // Arrange
             double a = 1991.829;

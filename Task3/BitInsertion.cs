@@ -17,7 +17,8 @@ namespace Task3
         /// <param name="b">Second number</param>
         /// <param name="firstIndex">Starting index which from we begin inserting</param>
         /// <param name="secondIndex">The last index where we inserting</param>
-        /// <returns></returns>
+        /// <returns>An inserted number</returns>
+        /// <exception cref="ArgumentException"></exception>
         public static int Insertion(int a, int b, int firstIndex, int secondIndex)
         {
             if (firstIndex < 0 || firstIndex > 31 || secondIndex < 0 || secondIndex > 31)

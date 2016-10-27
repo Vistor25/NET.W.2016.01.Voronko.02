@@ -53,6 +53,12 @@
     <Compile Include="BitInsertionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Task3\Task3.csproj">
+      <Project>{b3dc5f39-df74-4cf3-b825-a1744546b7ed}</Project>
+      <Name>Task3</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

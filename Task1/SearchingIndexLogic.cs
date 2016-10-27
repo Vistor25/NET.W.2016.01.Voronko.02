@@ -12,7 +12,8 @@ namespace Task1
         /// Searches the index of an element in the array where the sum before equal the sum after element
         /// </summary>
         /// <param name="array">The array where we search the index</param>
-        /// <returns></returns>
+        /// <returns>Index where the sum before equal the sum after index</returns>
+        /// <exception cref="ArgumentException"></exception>
         public static int Search(int [] array)
         {
             if (array == null || array.Length < 3)

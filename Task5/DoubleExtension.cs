@@ -9,6 +9,11 @@ namespace Task5
 {
     public static class DoubleExtension
     {
+        /// <summary>
+        /// Extension method which converts double number to a bit presentation
+        /// </summary>
+        /// <param name="a">Number</param>
+        /// <returns>Bit presintation</returns>
         public static string ConvertToBits(this double a)
         {
             BitArray BitPresentation = new BitArray(BitConverter.GetBytes(a));
