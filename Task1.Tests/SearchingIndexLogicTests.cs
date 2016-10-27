@@ -34,11 +34,23 @@ namespace Task1.Tests
         {
             // Arrange
             int[] array = { 1, 2};
-            var expected = new ArgumentException();
+           
             //Act
             var actual = SearchingIndexLogic.Search(array);
             //Assert
             
+        }
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void Search_ArrayIsNull_ReturnedArgumentException()
+        {
+            // Arrange
+            int[] array = null;
+            
+            //Act
+            var actual = SearchingIndexLogic.Search(array);
+            //Assert
+
         }
     }
 }

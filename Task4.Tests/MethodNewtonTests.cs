@@ -11,8 +11,8 @@ namespace Task4.Tests
         {
             // Arrange
             int a = 8;
-            int n = 2;
-            var expected = 2.8284;
+            int n = 3;
+            var expected = 2;
             //Act
             var actual = MethodNewton.SqrtByNewtonMetod(a,n);
             //Assert

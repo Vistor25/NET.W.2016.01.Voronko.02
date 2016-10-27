@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{53ED178E-C248-412C-8A46-03E8CCC6AAF5}</ProjectGuid>
+    <ProjectGuid>{75EACD9D-D0B6-44F0-9D3C-689665BE8781}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Task4.Tests</RootNamespace>
-    <AssemblyName>Task4.Tests</AssemblyName>
+    <RootNamespace>Task5.Tests</RootNamespace>
+    <AssemblyName>Task5.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -35,10 +35,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="nunit.framework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -54,17 +50,14 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="MethodNewtonTests.cs" />
+    <Compile Include="DoubleExtensionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Task4\Task4.csproj">
-      <Project>{f22a690d-bc95-4a8d-b8b4-acc716555455}</Project>
-      <Name>Task4</Name>
+    <ProjectReference Include="..\Task5\Task5.csproj">
+      <Project>{e4a222f1-0b74-43dc-abbe-a9b1ededfc14}</Project>
+      <Name>Task5</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

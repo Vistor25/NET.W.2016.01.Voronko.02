@@ -16,6 +16,8 @@ namespace Task2
         /// <returns>Splitted,sorted string excluding the repeating symbols</returns>
         public static string StringSplitting(string a, string b)
         {
+            if (string.Equals(a, string.Empty) || ReferenceEquals(a, null) || string.Equals(b, string.Empty) || ReferenceEquals(b, null))
+                throw new ArgumentException();
             string c = a + b;
             char[] cSplitted = c.ToCharArray();
             Array.Sort(cSplitted);
@@ -29,5 +31,6 @@ namespace Task2
             }
             return result.ToString();
         }
+
     }
 }

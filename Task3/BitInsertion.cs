@@ -20,6 +20,11 @@ namespace Task3
         /// <returns></returns>
         public static int Insertion(int a, int b, int firstIndex, int secondIndex)
         {
+            if (firstIndex < 0 || firstIndex > 31 || secondIndex < 0 || secondIndex > 31)
+            
+                throw new ArgumentException();
+            
+                
             BitArray firstNumber = new BitArray(new int[] { a });
             BitArray secondNumber = new BitArray(new int[] { b });
 
